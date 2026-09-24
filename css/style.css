@@ -1,258 +1,262 @@
 /* =========================================
    MJM ENTERPRISE LIMITED
    PMV TRANSPORTATION WEBSITE
-   IS229 Assessment 2
+   IS229 Assessment 3
    ========================================= */
 
+/* ---------- Design System Variables ---------- */
+:root {
+  --color-primary: #2A9D8F;
+  --color-secondary: #E9C46A;
+  --color-background: #F4F4F4;
+  --color-text: #222;
+  --color-heading: #1D3557;
 
-/* ---------- General Page Styling ---------- */
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 32px;
+  --space-xl: 64px;
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    background-color: #f4f4f4;
-    color: #222;
-    line-height: 1.6;
+  --font-body: Arial, Helvetica, sans-serif;
+  --font-heading: 'Montserrat', sans-serif;
 }
 
+/* ---------- General Page Styling ---------- */
+body {
+  font-family: var(--font-body);
+  margin: 0;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  line-height: 1.6;
+}
 
 /* ---------- Header ---------- */
-
 header {
-    background-color: #1f2937;
-    color: white;
-    text-align: center;
-    padding: 30px 20px;
+  background-color: var(--color-primary);
+  color: white;
+  text-align: center;
+  padding: var(--space-lg) var(--space-md);
 }
 
 header h1 {
-    margin: 0;
-    font-size: 2.2rem;
+  margin: 0;
+  font-size: 2.2rem;
+  font-family: var(--font-heading);
 }
 
 header p {
-    margin: 8px 0 0;
-    font-size: 1.1rem;
+  margin: var(--space-sm) 0 0;
+  font-size: 1.1rem;
 }
 
-
 /* ---------- Navigation ---------- */
-
 nav {
-    background-color: #111827;
-    text-align: center;
-    padding: 12px;
+  background-color: var(--color-heading);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  padding: var(--space-md);
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 12px;
-    font-weight: bold;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 nav a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
-
 
 /* ---------- Main Content ---------- */
-
 main {
-    max-width: 1000px;
-    margin: 30px auto;
-    padding: 0 20px;
+  max-width: 1000px;
+  margin: var(--space-lg) auto;
+  padding: 0 var(--space-md);
 }
 
+/* ---------- Flexbox Layout ---------- */
+.main-layout {
+  display: flex;
+  gap: var(--space-md);
+}
+
+.main-layout section {
+  flex: 3;
+}
+
+.main-layout aside {
+  flex: 1;
+}
 
 /* ---------- Sections ---------- */
-
 section,
 aside {
-    background-color: white;
-    margin-bottom: 25px;
-    padding: 25px;
-    border: 1px solid #ddd;
+  background-color: white;
+  margin-bottom: var(--space-lg);
+  padding: var(--space-lg);
+  border: 1px solid #ddd;
 }
 
-
 /* ---------- Headings ---------- */
-
 h2 {
-    margin-top: 0;
-    color: #1f2937;
+  margin-top: 0;
+  color: var(--color-heading);
+  font-family: var(--font-heading);
 }
 
 h3 {
-    color: #374151;
+  color: #374151;
+  font-family: var(--font-heading);
 }
 
-
-/* ---------- Images ---------- */
-
-figure {
-    margin: 25px 0;
-    text-align: center;
+/* ---------- Grid Gallery ---------- */
+.grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-md);
+  margin-top: var(--space-lg);
 }
 
-figure img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+.grid-gallery figure {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: var(--space-md);
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-figcaption {
-    margin-top: 10px;
-    font-style: italic;
-    color: #555;
+.grid-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
 }
 
+.grid-gallery figcaption {
+  margin-top: var(--space-sm);
+  font-style: italic;
+  color: #555;
+}
 
 /* ---------- Links ---------- */
-
 main a {
-    color: #1d4ed8;
-    font-weight: bold;
+  color: var(--color-secondary);
+  font-weight: bold;
 }
-
-
-/* ---------- Lists ---------- */
-
-ul {
-    padding-left: 25px;
-}
-
-li {
-    margin-bottom: 8px;
-}
-
 
 /* ---------- Tables ---------- */
-
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: var(--space-md);
 }
 
 caption {
-    font-weight: bold;
-    margin-bottom: 10px;
+  font-weight: bold;
+  margin-bottom: var(--space-sm);
 }
 
 th,
 td {
-    border: 1px solid #ccc;
-    padding: 12px;
-    text-align: left;
+  border: 1px solid #ccc;
+  padding: var(--space-md);
+  text-align: left;
 }
 
 th {
-    background-color: #e5e7eb;
+  background-color: #e5e7eb;
 }
 
-
 /* ---------- Forms ---------- */
-
 form {
-    margin-top: 20px;
+  margin-top: var(--space-md);
 }
 
 fieldset {
-    margin-bottom: 20px;
-    padding: 20px;
-    border: 1px solid #ccc;
+  margin-bottom: var(--space-md);
+  padding: var(--space-md);
+  border: 1px solid #ccc;
 }
 
 legend {
-    font-weight: bold;
-    padding: 0 8px;
+  font-weight: bold;
+  padding: 0 var(--space-sm);
 }
 
 label {
-    display: block;
-    margin-top: 12px;
-    margin-bottom: 5px;
-    font-weight: bold;
+  display: block;
+  margin-top: var(--space-md);
+  margin-bottom: var(--space-sm);
+  font-weight: bold;
 }
 
 input,
 select,
 textarea {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    font-family: inherit;
-    font-size: 1rem;
-}
-
-input[type="radio"] {
-    width: auto;
-    margin-right: 5px;
-}
-
-input[type="radio"] + label {
-    display: inline;
-    margin-right: 15px;
-    font-weight: normal;
+  width: 100%;
+  padding: var(--space-sm);
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 1rem;
 }
 
 button {
-    padding: 10px 18px;
-    margin-right: 10px;
-    margin-top: 10px;
-    border: 1px solid #333;
-    background-color: #1f2937;
-    color: white;
-    cursor: pointer;
-    font-weight: bold;
+  padding: var(--space-sm) var(--space-md);
+  margin-top: var(--space-sm);
+  border: 1px solid #333;
+  background-color: var(--color-primary);
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
 }
 
 button:hover {
-    background-color: #374151;
+  background-color: #374151;
 }
 
-
 /* ---------- Footer ---------- */
-
 footer {
-    background-color: #1f2937;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 30px;
+  background-color: var(--color-primary);
+  color: white;
+  text-align: center;
+  padding: var(--space-md);
+  margin-top: var(--space-lg);
 }
 
 footer p {
-    margin: 0;
+  margin: 0;
 }
 
-
-/* ---------- Smaller Screens ---------- */
+/* ---------- Responsive Breakpoints ---------- */
+@media (max-width: 900px) {
+  .main-layout {
+    flex-direction: column;
+  }
+}
 
 @media (max-width: 600px) {
+  header h1 {
+    font-size: 1.7rem;
+  }
 
-    header h1 {
-        font-size: 1.7rem;
-    }
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    nav a {
-        display: block;
-        margin: 8px 0;
-    }
+  main {
+    padding: 0 var(--space-sm);
+  }
 
-    main {
-        padding: 0 10px;
-    }
+  section,
+  aside {
+    padding: var(--space-md);
+  }
 
-    section,
-    aside {
-        padding: 18px;
-    }
-
-    th,
-    td {
-        padding: 8px;
-    }
+  th,
+  td {
+    padding: var(--space-sm);
+  }
 }

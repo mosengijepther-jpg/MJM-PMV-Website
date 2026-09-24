@@ -1,87 +1,59 @@
 # MJM Enterprise Limited – PMV Transportation Services
 
 ## Project Overview
-
-This website was developed for MJM Enterprise Limited as part of the
-IS229 Web Design Assessment 2.
-
-The website presents information about MJM Enterprise Limited's PMV
-transportation service and provides users with information about the
-company, services, PMV vehicle, and customer enquiries.
+This website was developed for MJM Enterprise Limited as part of the IS229 Web Design **Assessment 3**.  
+It extends the Assessment 2 site by introducing a professional design system, responsive layouts, and accessibility refinements.
 
 ## Purpose
-
-The purpose of the website is to provide passengers and potential
-customers with clear and accessible information about the PMV
-transportation service.
+The purpose of the website is to provide passengers and potential customers with clear, accessible, and mobile‑friendly information about the PMV transportation service.
 
 ## Target Audience
-
-The website is designed for:
-
-- Passengers using PMV transportation
-- People travelling along the Lae-Gabensis route
-- Students and workers who use passenger transportation
-- Customers seeking information about the PMV service
-- People who want to make a transportation enquiry
+- Passengers using PMV transportation  
+- People travelling along the Lae‑Gabensis route  
+- Students and workers who rely on passenger transport  
+- Customers seeking service information or making enquiries  
 
 ## Website Pages
-
 The website contains five main pages:
-
-1. **Home** – Introduction to MJM Enterprise Limited and its PMV service.
-2. **About** – Background and information about the company.
-3. **Services** – Information about the PMV transportation service.
-4. **Gallery** – Images and information about the PMV vehicle.
-5. **Contact** – Customer enquiry form and service-area information.
+1. **Home** – Introduction to MJM Enterprise Limited and its PMV service.  
+2. **About** – Background and company information.  
+3. **Services** – Details of the PMV transportation service.  
+4. **Gallery** – Responsive image gallery of the PMV vehicle.  
+5. **Contact** – Customer enquiry form and service‑area information.  
 
 ## Technologies Used
+- HTML5  
+- CSS3 (with Flexbox, Grid, and media queries)  
+- Visual Studio Code  
+- Git & GitHub  
+- GitHub Pages  
 
-The website was developed using:
+No frameworks or templates were used.
 
-- HTML5
-- CSS3
-- Visual Studio Code
-- Git
-- GitHub
-- GitHub Pages
+## Design System
+- **Colours**: Defined with CSS variables (primary, secondary, background, text, headings).  
+- **Typography**: Montserrat for headings, Arial/Helvetica for body text.  
+- **Spacing**: Consistent scale using variables (`--space-sm`, `--space-md`, etc.).  
+- **Components**: Styled navigation, buttons, forms, tables, and responsive images.  
 
-No website frameworks or templates were used.
-
-## HTML5 Features
-
-The website demonstrates the use of semantic HTML5 elements including:
-
-- `<header>`
-- `<nav>`
-- `<main>`
-- `<section>`
-- `<article>`
-- `<aside>`
-- `<footer>`
-- `<figure>`
-- `<figcaption>`
-- `<form>`
-- `<fieldset>`
-- `<table>`
-
-The website also includes meaningful headings, paragraphs, lists,
-links, images, alternative text, captions, metadata, and HTML form
-validation.
+## Responsive Layouts
+- **Flexbox**: Used for main content (`section + aside`) to create two‑column layouts on desktop, stacked on mobile.  
+- **Grid**: Used for gallery images, adapting automatically to screen size.  
+- **Media Queries**: Breakpoints at 900px (tablet) and 600px (mobile) ensure smooth adaptation.  
+- **Navigation**: Horizontal on desktop, stacked vertically on mobile.  
 
 ## Accessibility
+- Semantic HTML5 elements (`header`, `nav`, `main`, `section`, `aside`, `footer`).  
+- Meaningful alt text for images.  
+- Proper form labels and validation.  
+- Logical heading structure.  
 
-Accessibility considerations include:
-
-- Meaningful image alternative text
-- Descriptive link text
-- Proper form labels
-- Logical heading structure
-- Semantic HTML5 elements
-- Responsive basic presentation for smaller screens
+## Testing
+- Tested across mobile, tablet, and desktop screen sizes.  
+- Verified responsive layouts, navigation, and form behaviour.  
+- Screenshots included in submission to demonstrate responsiveness.  
 
 ## Project Structure
-
 ```text
 MJM-PMV-Website/
 ├── index.html
@@ -94,31 +66,30 @@ MJM-PMV-Website/
 │   └── style.css
 └── images/
     └── nembah-sewek.jpg
-    
-    ## AI Use Declaration
 
-I declare that Artificial Intelligence (AI) tools were used as a support resource during the development of the MJM Enterprise Limited – PMV Transportation Services website.
+AI Use Declaration
+Artificial Intelligence (AI) tools were used as a support resource during the development of this website.
+AI assistance supported:
 
-AI assistance was used to support the following activities:
+Planning the design system and responsive layouts.
 
-- Planning the website structure, sitemap, page organisation, and content requirements.
-- Providing guidance on HTML5 semantic structure and accessibility practices.
-- Assisting with the development and review of HTML5 code for the website pages.
-- Assisting with basic CSS styling and presentation.
-- Providing guidance on HTML validation, Git, GitHub, and GitHub Pages.
-- Troubleshooting and resolving development issues encountered during implementation.
-- Reviewing the website against the requirements of the assessment.
+Providing guidance on Flexbox, Grid, and media queries.
 
-The AI tool was used as a support and learning resource rather than as a replacement for my own participation in the development process. I reviewed, implemented, tested, and verified the website and its functionality in my development environment and on the published website.
+Reviewing HTML5 semantic structure and accessibility practices.
 
-I take responsibility for the final submitted work, including the website structure, content, source code, testing, validation, GitHub repository, and published website.
+Assisting with CSS refactoring and responsiveness.
 
-**Student:** Jepther Mosengi  
-**Course:** Bachelor of Business in Information Technology  
-**Subject:** IS229 – Web Design  
-**Assessment:** Assessment 2 – Web Design Using HTML5 and Text/Web Editor  
-**Year:** 2026  
-**AI Tool Used:** ChatGPT
+Supporting GitHub workflow and testing documentation.
 
-**Declaration:**  
+The AI tool was used as a support and learning resource, not a replacement for my own work.
+I take responsibility for the final submitted website, including structure, content, source code, testing, and publication.
+
+Student: Jepther Mosengi
+Course: Bachelor of Business in Information Technology
+Subject: IS229 – Web Design
+Assessment: Assessment 3 – Responsive Web Design
+Year: 2026
+AI Tool Used: Microsoft Copilot
+
+Declaration:  
 I confirm that the above statement accurately represents how AI assistance was used during the development of this assessment.
